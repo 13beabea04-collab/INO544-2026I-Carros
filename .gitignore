@@ -1,0 +1,56 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+
+# Entornos virtuales
+.venv/
+.venv-1/
+.venv-2/
+venv/
+ENV/
+env/
+
+# Modelos pesados (NO subir a GitHub)
+*.h5
+*.keras
+*.pb
+*.ckpt
+*.pth
+*.pt
+
+# SI subir el ONNX final (excepcion)
+!model/
+!model/*.onnx
+
+# Datasets - imagenes (NO subir)
+dataset_aumentado/
+no_carros/
+*.jpg
+*.jpeg
+*.png
+*.bmp
+*.gif
+
+# Carpetas temporales
+temp_dataset/
+temp_dataset_nuevo/
+*.tmp
+*.log
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Windows
+Thumbs.db
+desktop.ini
