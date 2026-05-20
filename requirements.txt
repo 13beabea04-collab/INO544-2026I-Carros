@@ -1,0 +1,6 @@
+tensorflow==2.16.1
+pillow==10.3.0
+numpy==1.26.4
+tf2onnx==1.16.0
+onnx==1.16.0
+onnxruntime==1.19.2
