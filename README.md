@@ -4,10 +4,10 @@
 ### IUJO — Feria de Haceres Período I-2026
 
 ## Integrantes
-- **Integrante 1:** [Beatriz Albornoz] - [30978113]
-- **Integrante 2:** [Yodsan Alarcon] - [27279007] 
-- **Integrante 3:** [Adrian Antoine] - [27795700]
-- **Integrante 3:** [Cesar Colina] - [32088785]
+- **Integrante 1:** Beatriz Albornoz 30978113
+- **Integrante 2:** Yodsan Alarcon 27279007 
+- **Integrante 3:** Adrian Antoine 27795700
+- **Integrante 3:** Cesar Colina 32088785
 
 ## Tema
 - **Objeto:** Carros
@@ -20,8 +20,8 @@
 
 ## Resultados
 - Precisión en prueba: 94.53%
-- Aciertos carros: 100%
-- Aciertos no carros: 100%
+- Aciertos carros: 80%
+- Aciertos no carros: 80%
 
 ## Especificaciones ONNX
 - Input: [1, 224, 224, 3]
