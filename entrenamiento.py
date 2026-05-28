@@ -14,6 +14,7 @@ print("="*60)
 print("ENTRENAMIENTO SIMPLE - ANTI-OVERFITTING")
 print("="*60)
 
+
 # CONFIGURACION
 RUTA_CARROS = r"C:\Users\beatr\OneDrive\Desktop\dataset_aumentado"
 RUTA_NO_CARROS = r"C:\Users\beatr\OneDrive\Desktop\no_carros"

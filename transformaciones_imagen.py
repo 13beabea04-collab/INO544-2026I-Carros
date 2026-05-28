@@ -145,6 +145,25 @@ def _procesar_desde_pil(img, ruta_entrada=None, ruta_salida=None):
     }
 
 
+def procesar_imagen_lote(ruta_entrada):
+    """
+    Preprocesado ligero para inferencia por lote (sin escritura en disco).
+    """
+    if not os.path.exists(ruta_entrada):
+        raise FileNotFoundError(f"No se encuentra el archivo: {ruta_entrada}")
+
+    with Image.open(ruta_entrada) as img:
+        img.load()
+        if img.mode != "RGB":
+            img = img.convert("RGB")
+        img_modelo = normalizar_base(img)
+        return {
+            "ruta": os.path.abspath(ruta_entrada),
+            "nombre": os.path.basename(ruta_entrada),
+            "array_modelo": imagen_a_array_modelo(img_modelo),
+        }
+
+
 def procesar_imagen_seleccionada(ruta_entrada, ruta_salida=None):
     """
     Prepara la imagen para el modelo desde un archivo en disco.
